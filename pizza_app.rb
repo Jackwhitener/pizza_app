@@ -44,7 +44,6 @@ else
 	isgettingnumber = false
 end
 end
-
 number.times do 
 	counter += 1
 	if randsize == 9
@@ -72,3 +71,5 @@ number.times do
 	pizza(randsize,randcrust,randsauce,randcheese,randvegetal,randmeat)
 end 
 puts "Your final charge is $#{price}"
+tip = price * 0.25
+puts "Your suggested tip is $#{tip}, making your suggested total $#{tip+price}"
